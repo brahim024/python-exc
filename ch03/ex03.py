@@ -1,6 +1,9 @@
 # Exercise 3: Write a program to prompt for a score between 0.0 and 1.0. If the
 # score is out of range, print an error message. If the score is between 0.0 and 1.0,
 # print a grade using the following table:
+# Run the program repeatedly as shown above to test the various different values for
+# input.
+
 while True:
 	score=input('enter your score: ')
 	try:
