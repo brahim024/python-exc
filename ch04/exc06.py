@@ -8,11 +8,26 @@ def computation(hour,rate):
 		hour=int(hour)
 		rate=float(rate)
 		if hour > 40:
-			pay=(hour - 40)*rate*2 +40 *rate
+			pay=(hour - 40)*rate*1.5 +40 *rate
 		else:
 			pay=hour*rate
 		print('your pay is: ',pay)
 
 	except ValueError:
 		print('please enter numeric input')
-computation(29,10)
+computation(0,0)
+
+# another way 
+
+def comput(hour,rate):
+	if hour > 40:
+		pay=(hour - 40)*rate*1.5 +40 *rate
+	else:
+		pay=hour*rate
+	return pay
+hour=int(input("enter your hours!: "))
+rate=float(input("enter your rate!: "))
+Pay=comput(hour,rate)
+print('pay: ',Pay)
+
+
